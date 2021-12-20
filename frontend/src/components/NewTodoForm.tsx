@@ -1,8 +1,11 @@
 import React from "react";
 
 const NewTodoForm: React.FC = () => {
+ 
+   const todoSubmitHandler = () => {};
+
   return (
-    <form>
+    <form onSubmit={todoSubmitHandler}>
       <div>
         <label htmlFor="todo-text">Todo Text</label>
         <input type="text" id="todo-text"  placeholder="Enter Todo ..."/>
