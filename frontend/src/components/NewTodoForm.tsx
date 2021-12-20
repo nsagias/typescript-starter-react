@@ -5,7 +5,7 @@ const NewTodoForm: React.FC = () => {
 
   const todoSubmitHandler = (event: React.FormEvent) => {
     event.preventDefault();
-    const enteredText = textInputRef.current?.value;
+    const enteredText = textInputRef.current!.value;
   };
 
   return (
