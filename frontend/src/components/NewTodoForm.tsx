@@ -1,10 +1,11 @@
 import React, { useRef } from "react";
 
 const NewTodoForm: React.FC = () => {
-  const useInputRef = useRef<HTMLInputElement>(null);
+  const textInputRef = useRef<HTMLInputElement>(null);
 
   const todoSubmitHandler = (event: React.FormEvent) => {
     event.preventDefault();
+    const enteredText = textInputRef.current?.value;
   };
 
   return (
@@ -14,7 +15,7 @@ const NewTodoForm: React.FC = () => {
         <input 
           type="text" 
           id="todo-text" 
-          ref={useInputRef} 
+          ref={textInputRef} 
           placeholder="Enter Todo ..."
         />
       </div>
