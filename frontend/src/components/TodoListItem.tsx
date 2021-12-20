@@ -9,7 +9,9 @@ const TodoListItem: React.FC<TodoListItemProps> = props => {
   
   return (
     <h2>
-      <li>{text}</li>
+      <li>
+        <span>{text}</span> <button>DELETE</button>
+      </li>
     </h2>
   );
 };
