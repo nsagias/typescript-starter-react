@@ -1,19 +1,25 @@
 import React from "react";
 
-interface TodoListItemProps {
-  text: string;
-}
+// interface TodoListItemProps {
+//   id: string;
+//   text: string;
+//   onDeleteTodo: (id: string) => void;
+// }
 
-const TodoListItem: React.FC<TodoListItemProps> = props => {
-  const {text} = props;
+// const TodoListItem: React.FC<TodoListItemProps> = props => {
+//   const {text, onDeleteTodo} = props;
   
-  return (
-    <h2>
-      <li>
-        <span>{text}</span> <button>DELETE</button>
-      </li>
-    </h2>
-  );
-};
+//   return (
+//     <h2>
+//       <li>
+//         <span>{text}</span> <button onClick={onDeleteTodo.bind(this )}>DELETE</button>
+//       </li>
+//     </h2>
+//   );
+// };
 
-export default TodoListItem;
+export default function TodoListItem() {
+  return (
+    <></>
+  )
+};
