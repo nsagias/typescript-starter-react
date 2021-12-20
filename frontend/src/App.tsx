@@ -10,7 +10,10 @@ const App: React.FC = () => {
 
   const todoAddHandler = (text: string) => {
     console.log('App Received Text: ', text);
-    setTodos(prevTodos => [...prevTodos, {id: uuid(),text: text}]);
+    setTodos(prevTodos => [
+        ...prevTodos, 
+        {id: uuid(),text: text}
+    ]);
   };
 
   return (
