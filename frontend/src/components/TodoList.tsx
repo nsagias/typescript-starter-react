@@ -4,7 +4,7 @@ interface TodoListProps {
   items: {id: string, text: string}[];
 }
 
-const TodoList: React.FC<{> = props => {
+const TodoList: React.FC<TodoListProps> = props => {
  
  
   const pasrsedtodos = Array.isArray(props.items) 
