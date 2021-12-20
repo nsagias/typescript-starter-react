@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NewTodoForm from './components/NewTodoForm';
 import TodoList from './components/TodoList';
 
-function App() {
+const App: React.FC = () => {
   const todoList = [{id:'t1', text: 'Do Laundry!'}];
 
   const todoAddHandler = (text: string) => {
