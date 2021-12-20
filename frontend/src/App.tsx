@@ -12,8 +12,8 @@ function App() {
 
   return (
     <div className="App">
-      <NewTodoForm />
-      <TodoList items={todoList}/>
+      <NewTodoForm onAddTodo={todoAddHandler} />
+      <TodoList items={todoList} />
     </div>
   );
 }
