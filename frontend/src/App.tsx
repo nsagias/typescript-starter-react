@@ -3,7 +3,7 @@ import NewTodoForm from './components/NewTodoForm';
 import TodoList from './components/TodoList';
 
 const App: React.FC = () => {
-  const todoList = [{id:'t1', text: 'Do Laundry!'}];
+  const todoList = useState([]);
 
   const todoAddHandler = (text: string) => {
     console.log('App Received Text: ', text);
