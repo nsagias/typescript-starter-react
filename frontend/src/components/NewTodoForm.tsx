@@ -5,7 +5,7 @@ const NewTodoForm: React.FC = () => {
     <form>
       <div>
         <label htmlFor="todo-text">Todo Text</label>
-        <input type="text" id="todo-text" />
+        <input type="text" id="todo-text"  placeholder="Enter Todo ..."/>
       </div>
       <button type="submit">Add Todo</button>
     </form>
