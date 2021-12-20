@@ -3,6 +3,7 @@ import TodoListItem from "./TodoListItem";
 
 interface TodoListProps {
   items: {id: string, text: string}[];
+  onDeleteTodo: (todoId: string) => void;
 }
 
 const TodoList: React.FC<TodoListProps> = props => {
