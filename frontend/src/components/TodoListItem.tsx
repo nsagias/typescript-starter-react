@@ -1,8 +1,16 @@
 import React from "react";
 
-const TodoListItem: React.FC = () => {
+interface TodoListItemProps {
+  text: string;
+}
+
+const TodoListItem: React.FC<TodoListItemProps> = props => {
+  const {text} = props;
+  
   return (
-    <></>
+    <h2>
+      <li>{text}</li>
+    </h2>
   );
 };
 
