@@ -2,7 +2,9 @@ import React from "react";
 
 const NewTodoForm: React.FC = () => {
  
-   const todoSubmitHandler = () => {};
+   const todoSubmitHandler = (event: React.FormEvent) => {
+     event.preventDefault();
+   };
 
   return (
     <form onSubmit={todoSubmitHandler}>
