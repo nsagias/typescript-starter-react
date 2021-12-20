@@ -6,12 +6,13 @@ interface NewTodoProps {
 
 const NewTodoForm: React.FC<NewTodoProps> = props => {
   const {onAddTodo} = props;
-  const textInputRef = useRef<HTMLInputElement>(null);
+  let textInputRef = useRef<HTMLInputElement>(null);
 
   const todoSubmitHandler = (event: React.FormEvent) => {
     event.preventDefault();
-    const enteredText = textInputRef.current!.value;
+    let enteredText = textInputRef.current!.value;
     onAddTodo(enteredText);
+    textInputRef.current!.value = "";
   };
 
   return (
