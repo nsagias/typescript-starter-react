@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import NewTodoForm from './components/NewTodoForm';
 import TodoList from './components/TodoList';
-import uuid from "uuid";
+import {v4 as uuid} from 'uuid';
 import { ITodoItem } from './todo.model';
 
 
@@ -10,7 +10,8 @@ const App: React.FC = () => {
 
   const todoAddHandler = (text: string) => {
     console.log('App Received Text: ', text);
-    setTodos([{id: uuid.v4(),text: text}])
+    const updateTodosList = [...todos, {id: uuid(),text: text}]
+    setTodos(updateTodosList)
   };
 
   return (
