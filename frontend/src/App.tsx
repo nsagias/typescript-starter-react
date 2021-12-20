@@ -6,9 +6,8 @@ const App: React.FC = () => {
   const todoList = [{id:'t1', text: 'Do Laundry!'}];
 
   const todoAddHandler = (text: string) => {
-    console.log('App Received Text: ', text)
+    console.log('App Received Text: ', text);
   };
-;
 
   return (
     <div className="App">
