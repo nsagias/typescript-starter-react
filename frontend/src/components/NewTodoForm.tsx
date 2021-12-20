@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 
 const NewTodoForm: React.FC = () => {
-  const useInputRef = useRef();
+  const useInputRef = useRef<HTMLInputElement>(null);
 
   const todoSubmitHandler = (event: React.FormEvent) => {
     event.preventDefault();
