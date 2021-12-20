@@ -3,12 +3,18 @@ import NewTodoForm from './components/NewTodoForm';
 import TodoList from './components/TodoList';
 import uuid from "uuid";
 
+interface ITodoItem {
+  id: string;
+  text: string;
+}
+
+
 const App: React.FC = () => {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState<ITodoItem[]>([]);
 
   const todoAddHandler = (text: string) => {
     console.log('App Received Text: ', text);
-    setTodos([{id: uuid.v4()}])
+    setTodos([{id: uuid.v4(),text: text}])
   };
 
   return (
