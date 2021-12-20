@@ -2,11 +2,7 @@ import React, { useState } from 'react';
 import NewTodoForm from './components/NewTodoForm';
 import TodoList from './components/TodoList';
 import uuid from "uuid";
-
-interface ITodoItem {
-  id: string;
-  text: string;
-}
+import { ITodoItem } from './todo.model';
 
 
 const App: React.FC = () => {
