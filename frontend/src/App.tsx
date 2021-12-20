@@ -15,6 +15,12 @@ const App: React.FC = () => {
         {id: uuid(),text: text}
     ]);
   };
+  
+  const todoDeleteHandler = (todoId: string) => {
+    setTodos(prevTodos => {
+      return prevTodos.filter(todo => todo.id !== todoId);
+    });
+  }
 
   return (
     <div className="App">
